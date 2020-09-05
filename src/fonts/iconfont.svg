@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="icon-user" unicode="&#58940;" d="M248.384 631.872c0 145.856 118.016 264.128 263.616 264.128s263.616-118.272 263.616-264.128-118.016-264.128-263.616-264.128-263.616 118.272-263.616 264.128zM972.8-128c-11.456 245.056-213.376 428.736-460.8 428.736s-449.344-183.68-460.8-428.736h921.6z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="cloud-icon" unicode="&#58943;" d="M768.1 480.3v0.7c0 140.9-114.2 255.1-255.1 255.1S257.9 621.9 257.9 481v-0.5c-107.7-7.7-193.5-98.2-193.5-207.8 0-114.6 93.8-208.4 208.4-208.4h478.4c114.6 0 208.4 93.8 208.4 208.4-0.1 108.8-84.7 198.9-191.5 207.6z m-192-131.8v-156.4h-128V348.5h-96l160 163.7 160-163.7h-96z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

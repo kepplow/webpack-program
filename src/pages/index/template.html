@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网格系统</title>
+</head>
+<body>
+    <div class="user-info">
+        <span class="iconfont icon-icon-user" aria-hidden="true"></span>&nbsp;
+        <span class="nick-name">网格管理员</span>
+    </div>
+    <div class="search-bar">
+        <span class="community">
+            <select class="form-control no-border">
+                <option value="0" disabled selected>社区</option>
+            </select>
+        </span>
+        <span class="residential">
+            <select class="form-control no-border">
+                <option value="0" disabled selected>小区</option>
+            </select>
+        </span>
+        <span class="building">
+            <select class="form-control no-border">
+                <option value="0" disabled selected>楼栋</option>
+            </select>
+        </span>
+    </div>
+    <div class="address-details text-center">
+        请选择楼栋
+    </div>
+    <div class="table-responsive">
+        <table id="table" class="table table-bordered text-center table-condensed" data-height="400">
+            <thead>
+                <tr>
+                    <th class="classification" rowspan="2"></th>
+                    <th colspan="3">1栋1单元</th>
+                    <th colspan="3">1栋2单元</th>
+                    <th colspan="3">1栋3单元</th>  
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1F</td>
+                <td  data-toggle="modal" data-target=".bs-example-modal-lg"><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            <tr>
+                <td>2F</td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            <tr>
+                <td>3F</td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            <tr>
+                <td>4F</td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            <tr>
+                <td>5F</td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            <tr>
+                <td>6F</td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            <tr>
+                <td>7F</td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+                <td><span class="sanjiao"></span></td>
+                <td><span class="juxing"></span></td>
+                <td><span class="yuan"></span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="echarts"></div>
+    <button class="btn-submit">提交</button>
+    <div id="select-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">房源类型</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="option">
+                        <span class="yuan"></span> 自用房
+                    </div>
+                    <div class="option">
+                        <span class="sanjiao"></span> 租赁房
+                    </div>
+                    <div class="option">
+                        <span class="juxing"></span> 闲置房
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
